@@ -890,9 +890,9 @@ def load_settings():
 
         "pb-exit": "swaymsg exit",
         "pb-lock": "nwg-lock",
-        "pb-poweroff": "systemctl -i poweroff",
-        "pb-reboot": "systemctl reboot",
-        "pb-sleep": "systemctl suspend",
+        "pb-poweroff": "loginctl -i poweroff",
+        "pb-reboot": "loginctl reboot",
+        "pb-sleep": "loginctl suspend",
 
         "panel-preset": "preset-0",
         "panel-custom": "",
@@ -958,15 +958,15 @@ def load_settings():
         "gtklock-logout-command": "swaymsg exit",
         "gtklock-playerctl": False,
         "gtklock-powerbar": False,
-        "gtklock-poweroff-command": "systemctl -i poweroff",
-        "gtklock-reboot-command": "systemctl reboot",
-        "gtklock-suspend-command": "systemctl suspend",
+        "gtklock-poweroff-command": "loginctl -i poweroff",
+        "gtklock-reboot-command": "loginctl reboot",
+        "gtklock-suspend-command": "loginctl suspend",
         "gtklock-time-format": "%H:%M:%S",
         "gtklock-userinfo": False,
         "gtklock-userswitch-command": "",
         "update-indicator-on": False,
         "update-indicator-interval": 30,
-        "update-command": "nwg-system-update"
+        "update-command": ""
     }
     global settings
     if os.path.isfile(settings_file):
