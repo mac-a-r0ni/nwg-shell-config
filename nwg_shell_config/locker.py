@@ -55,9 +55,9 @@ defaults = {
     "gtklock-logout-command": "swaymsg exit",
     "gtklock-playerctl": False,
     "gtklock-powerbar": False,
-    "gtklock-poweroff-command": "systemctl -i poweroff",
-    "gtklock-reboot-command": "systemctl reboot",
-    "gtklock-suspend-command": "systemctl suspend",
+    "gtklock-poweroff-command": "loginctl -i poweroff",
+    "gtklock-reboot-command": "loginctl reboot",
+    "gtklock-suspend-command": "loginctl suspend",
     "gtklock-time-format": "%H:%M:%S",
     "gtklock-userinfo": False,
     "gtklock-userswitch-command": ""
